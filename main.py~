@@ -1,0 +1,23 @@
+import numpy as np
+import math
+
+PI = math.pi
+ONE_OVER_TWO_PI = 1 / (2 * PI)
+
+'''
+I know this is basically trivial, but it's worth
+including anyway.
+'''
+def cyclic_trapezoid_integrator(function_values):
+    return np.sum(function_values)
+
+def fourier_projection(function, max_degree, integrator):
+    coefficient_array = np.zeros(2 * max_degree + 1)
+    for k in range(2 * max_degree + 1):
+        coefficient[k] = integrator(
+
+def main():
+    
+
+if __name__ == "__main__":
+    main()
